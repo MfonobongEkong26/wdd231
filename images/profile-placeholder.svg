@@ -1,0 +1,8 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360">
+    <title>Student photo placeholder</title>
+    <rect width="300" height="360" fill="#e8edf3"/>
+    <circle cx="150" cy="115" r="65" fill="#173451"/>
+    <path d="M35 340 C40 230 95 195 150 195 C205 195 260 230 265 340 Z" fill="#173451"/>
+    <text x="150" y="330" text-anchor="middle" font-size="18" fill="#ffffff">Mfonobong</text>
+</svg>

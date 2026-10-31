@@ -1,0 +1,84 @@
+
+/* WDD 231 - Large Screen Styles */
+
+@media screen and (min-width: 700px) {
+
+    .header-content {
+        padding: 5px 10px;
+    }
+
+    .menu-button {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 0;
+        padding: 0 20px;
+    }
+
+    .navigation a {
+        min-width: 130px;
+        border-bottom: 3px solid transparent;
+    }
+
+    .navigation a.active {
+        border-bottom: 3px solid var(--gold);
+    }
+
+    main {
+        padding: 0 25px;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+        align-items: stretch;
+        gap: 22px;
+    }
+
+    .about-section {
+        grid-column: 1;
+    }
+
+    .photo-section {
+        grid-column: 2;
+    }
+
+    .certificate-section {
+        grid-column: 1 / -1;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .course-card {
+        min-height: 145px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    main {
+        margin-top: 35px;
+    }
+
+    .home-grid {
+        grid-template-columns: 2fr 1fr;
+    }
+
+    .course-container {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 18px;
+        padding: 0 25px;
+    }
+
+    .course-card {
+        padding: 20px;
+    }
+}

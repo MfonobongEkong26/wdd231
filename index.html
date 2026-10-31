@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Mfonobong's WDD 231 course homepage, featuring information about me, my studies, and Web and Computer Programming courses.">
+
+    <meta name="author" content="Mfonobong">
+
+    <title>WDD 231 | Course Home Page - Mfonobong</title>
+
+    <link rel="icon" href="images/byui-logo.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/byui-logo.svg" alt="BYU-Idaho logo" class="site-logo">
+            <span class="student-name">Mfonobong</span>
+
+            <button id="menu-button"
+                    class="menu-button"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navigation">
+                <span class="hamburger">☰</span>
+            </button>
+        </div>
+    </header>
+
+    <nav id="navigation" class="navigation">
+        <a href="index.html" class="active" aria-current="page">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="final/index.html">Final</a>
+    </nav>
+
+    <main>
+        <h1>Home</h1>
+
+        <div class="home-grid">
+
+            <section class="about-section">
+                <h2>About Me</h2>
+                <div class="section-content">
+                    <p>
+                        My name is Mfonobong. I am a student interested in
+                        web development and software development. I enjoy
+                        learning new technologies and developing practical
+                        solutions through programming.
+                    </p>
+                    <p>
+                        I am currently studying Web Frontend Development I
+                        (WDD 231). My goal is to improve my skills in HTML,
+                        CSS, JavaScript, and modern web development.
+                    </p>
+                    <p>
+                        I am from Nigeria, and I look forward to using my
+                        knowledge to build useful and professional websites.
+                    </p>
+                </div>
+            </section>
+
+            <section class="photo-section">
+                <h2>Student Photo</h2>
+                <div class="section-content photo-content">
+                    <img src="images/profile-placeholder.svg"
+                         alt="Student photo placeholder for Mfonobong"
+                         class="profile-photo">
+                    <p class="photo-caption">Mfonobong</p>
+                </div>
+            </section>
+
+            <section class="certificate-section">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="course-filters" aria-label="Course filters">
+                    <button type="button" class="filter-button active"
+                            data-filter="ALL" aria-pressed="true">
+                        All Courses
+                    </button>
+
+                    <button type="button" class="filter-button"
+                            data-filter="WDD" aria-pressed="false">
+                        WDD Courses
+                    </button>
+
+                    <button type="button" class="filter-button"
+                            data-filter="CSE" aria-pressed="false">
+                        CSE Courses
+                    </button>
+                </div>
+
+                <p id="course-count" aria-live="polite"></p>
+
+                <div id="course-container" class="course-container">
+                    <!-- JavaScript displays course cards here -->
+                </div>
+
+                <p class="credit-total">
+                    Total Credits:
+                    <strong><span id="total-credits">0</span></strong>
+                </p>
+
+                <div class="course-legend">
+                    <span class="completed-key">Completed</span>
+                    <span class="not-completed-key">Not Completed</span>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://github.com/MfonobongEkong26"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="GitHub">
+                <span class="social-icon">GH</span>
+                GitHub
+            </a>
+
+            <a href="https://www.linkedin.com/"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="LinkedIn">
+                <span class="social-icon">in</span>
+                LinkedIn
+            </a>
+
+            <a href="https://www.youtube.com/"
+               target="_blank" rel="noopener noreferrer"
+               aria-label="YouTube">
+                <span class="social-icon">▶</span>
+                YouTube
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="currentyear"></span>
+            Mfonobong | Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
