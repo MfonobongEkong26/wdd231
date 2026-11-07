@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="0 0 300 180"
+     role="img"
+     aria-labelledby="title">
+    <title id="title">Business logo placeholder</title>
+    <rect width="300" height="180" rx="12" fill="#e4f3f1"/>
+    <circle cx="150" cy="65" r="30" fill="#168c85"/>
+    <path d="M105 125 Q150 85 195 125 L195 145 L105 145 Z"
+          fill="#12304a"/>
+    <text x="150" y="165"
+          font-family="Arial, sans-serif"
+          font-size="13"
+          text-anchor="middle"
+          fill="#12304a">Business Logo</text>
+</svg>

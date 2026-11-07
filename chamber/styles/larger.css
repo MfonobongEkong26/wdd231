@@ -1,0 +1,55 @@
+/* Larger screen styles */
+
+@media screen and (min-width: 650px) {
+
+    .header-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #menu-button {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+        gap: 0.3rem;
+    }
+
+    nav a {
+        padding: 0.6rem 0.8rem;
+    }
+
+    .directory-controls {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .members-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 950px) {
+
+    .members-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    .page-heading {
+        padding: 3rem 1rem;
+    }
+}

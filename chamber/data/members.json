@@ -1,0 +1,58 @@
+[
+    {
+        "name": "First Move Logistics",
+        "address": "122B NTA Choba Road, Mgbougba, Port Harcourt, Rivers State",
+        "phone": "+234 808 527 3309",
+        "website": "https://www.firstmovelogistics.com",
+        "image": "first-move.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Peritoneum Global Services Limited",
+        "address": "No. 1 Salvation Street, Ada George, Port Harcourt, Rivers State",
+        "phone": "+234 814 531 1039",
+        "website": "https://www.pgs.com.ng",
+        "image": "peritoneum.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Industries Safety Nigeria",
+        "address": "152 Aba Road, Port Harcourt, Rivers State",
+        "phone": "+234 909 333 3374",
+        "website": "https://safetynigeria.com",
+        "image": "industries-safety.png",
+        "membershipLevel": 3
+    },
+    {
+        "name": "Abili Integrated Services Ltd.",
+        "address": "5 ADC Close, off Ada George Road, Port Harcourt, Rivers State",
+        "phone": "+234 806 469 3165",
+        "website": "https://abiliglobal.com",
+        "image": "abili.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Skyline ICT Consult Ltd.",
+        "address": "BOI-RSU Innovation Hub, Rivers State University, Port Harcourt",
+        "phone": "+234 810 152 4926",
+        "website": "https://skylineict.com",
+        "image": "skyline.png",
+        "membershipLevel": 1
+    },
+    {
+        "name": "Oak Event & Party Rentals",
+        "address": "16B Trans Amadi, Port Harcourt, Rivers State",
+        "phone": "+234 809 822 2218",
+        "website": "https://oakrentals.com.ng",
+        "image": "oak-rentals.png",
+        "membershipLevel": 2
+    },
+    {
+        "name": "Virgo Energy Limited",
+        "address": "Plot 288 Danjuma Drive, Trans Amadi, Port Harcourt, Rivers State",
+        "phone": "08186310000",
+        "website": "https://virgolimited.com",
+        "image": "virgo-energy.png",
+        "membershipLevel": 1
+    }
+]

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Directory | Port Harcourt Chamber of Commerce</title>
+
+    <meta name="description"
+        content="Explore businesses and services in Port Harcourt, Rivers State, Nigeria, through the Port Harcourt Chamber of Commerce directory.">
+
+    <meta name="author" content="Mfonobong">
+
+    <meta property="og:title"
+        content="Port Harcourt Chamber of Commerce - Business Directory">
+    <meta property="og:description"
+        content="Discover businesses and services in Port Harcourt, Nigeria.">
+    <meta property="og:image" content="images/chamber-og.svg">
+    <meta property="og:url"
+        content="https://mfonobongekong26.github.io/wdd231/chamber/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <img src="images/favicon.svg" alt="" width="50" height="50">
+                <div>
+                    <h1>Port Harcourt</h1>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html" class="active" aria-current="page">
+                    Directory
+                </a>
+                <a href="join.html">Join</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-heading">
+            <h2>Business Directory</h2>
+            <p>
+                Discover businesses, services, and opportunities
+                in Port Harcourt, Rivers State.
+            </p>
+        </section>
+
+        <section class="directory-section">
+            <div class="directory-controls">
+                <h2>Our Members</h2>
+
+                <div class="view-buttons">
+                    <button id="grid-view" class="view-button active"
+                        aria-pressed="true">
+                        Grid View
+                    </button>
+
+                    <button id="list-view" class="view-button"
+                        aria-pressed="false">
+                        List View
+                    </button>
+                </div>
+            </div>
+
+            <p id="member-count" class="member-count" aria-live="polite">
+                Loading members...
+            </p>
+
+            <div id="members-container" class="members-grid">
+                <p>Loading business directory...</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Port Harcourt Chamber of Commerce</h2>
+                <p>Port Harcourt, Rivers State, Nigeria</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +234 800 000 0000</p>
+            </div>
+
+            <div>
+                <h2>About Our Directory</h2>
+                <p>
+                    Supporting local businesses and encouraging
+                    economic growth in Port Harcourt.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Port Harcourt Chamber of Commerce |
+                Mfonobong | WDD 231
+            </p>
+
+            <p>
+                Last Modified:
+                <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

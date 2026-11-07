@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+    <rect width="100" height="100" rx="18" fill="#12304a"/>
+    <path d="M15 65 L50 20 L85 65 Z" fill="#168c85"/>
+    <path d="M25 65 H75 V80 H25 Z" fill="#ffffff"/>
+    <text x="50" y="58"
+          font-size="24"
+          font-family="Arial"
+          font-weight="bold"
+          text-anchor="middle"
+          fill="#ffffff">PH</text>
+</svg>
