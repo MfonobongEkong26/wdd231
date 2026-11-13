@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Port Harcourt Chamber of Commerce | Home</title>
+
+    <meta name="description"
+        content="Welcome to the Port Harcourt Chamber of Commerce. Discover local businesses, upcoming events, business opportunities, and community resources.">
+
+    <meta name="author" content="Mfonobong">
+
+    <meta property="og:title"
+        content="Port Harcourt Chamber of Commerce">
+
+    <meta property="og:description"
+        content="Connecting businesses and building a stronger Port Harcourt.">
+
+    <meta property="og:image"
+        content="https://mfonobongekong26.github.io/wdd231/chamber/images/chamber-hero.jpg">
+
+    <meta property="og:url"
+        content="https://mfonobongekong26.github.io/wdd231/chamber/index.html">
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+
+            <div class="brand">
+                <img src="images/favicon.svg"
+                    alt=""
+                    width="50"
+                    height="50">
+
+                <div>
+                    <p class="brand-name">Port Harcourt</p>
+                    <p>Chamber of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-button"
+                aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="navigation" aria-label="Main navigation">
+                <a href="index.html"
+                    class="active"
+                    aria-current="page">Home</a>
+
+                <a href="discover.html">Discover</a>
+
+                <a href="directory.html">Directory</a>
+
+                <a href="join.html">Join</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="home-hero">
+
+            <img
+                src="images/chamber-hero.jpg"
+                alt="Port Harcourt waterfront and city skyline"
+                class="hero-image"
+                width="1600"
+                height="650"
+                fetchpriority="high">
+
+            <div class="hero-content">
+                <h1>Welcome to the Port Harcourt Chamber of Commerce</h1>
+
+                <p>
+                    Together for a stronger, more prosperous Port Harcourt.
+                </p>
+
+                <a href="join.html" class="cta-button">
+                    Join the Chamber
+                </a>
+            </div>
+
+        </section>
+
+        <!-- Events and Weather -->
+        <div class="home-grid">
+
+            <!-- Events Section -->
+            <section class="home-card events-section">
+
+                <h2>Upcoming Events</h2>
+
+                <article class="event-item">
+                    <h3>Business Growth and Networking Forum</h3>
+
+                    <p>
+                        <strong>Date:</strong>
+                        November 28, 2026
+                    </p>
+
+                    <p>
+                        <strong>Location:</strong>
+                        Port Harcourt, Rivers State
+                    </p>
+
+                    <p>
+                        Connect with local entrepreneurs, business owners,
+                        and industry leaders to explore opportunities
+                        for business growth.
+                    </p>
+
+                    <a href="join.html">Get involved</a>
+                </article>
+
+            </section>
+
+            <!-- Weather Section -->
+            <section class="home-card weather-section">
+
+                <h2>Weather in Port Harcourt</h2>
+
+                <div id="current-weather">
+
+                    <div class="weather-current">
+                        <img
+                            id="weather-icon"
+                            src=""
+                            alt=""
+                            width="90"
+                            height="90">
+
+                        <div>
+                            <p id="temperature">Loading...</p>
+                            <p id="weather-description"></p>
+                        </div>
+                    </div>
+
+                    <p id="weather-location">
+                        Port Harcourt, Nigeria
+                    </p>
+
+                </div>
+
+                <h3>3-Day Temperature Forecast</h3>
+
+                <div id="weather-forecast" class="forecast-grid">
+                    <p>Loading forecast...</p>
+                </div>
+
+            </section>
+
+        </div>
+
+        <!-- Business Spotlights -->
+        <section class="spotlights-section">
+
+            <h2>Business Spotlights</h2>
+
+            <p>
+                Discover some of the outstanding businesses
+                in our Port Harcourt business community.
+            </p>
+
+            <div id="spotlight-container" class="spotlight-grid">
+                <p>Loading business spotlights...</p>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h2>Port Harcourt Chamber of Commerce</h2>
+
+                <p>Port Harcourt, Rivers State, Nigeria</p>
+
+                <p>Email: info@phchamber.org</p>
+            </div>
+
+            <div>
+                <p>
+                    &copy; <span id="current-year"></span>
+                    Port Harcourt Chamber of Commerce
+                </p>
+
+                <p>
+                    Last Modified:
+                    <span id="last-modified"></span>
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>

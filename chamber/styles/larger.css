@@ -1,6 +1,27 @@
+
 /* Larger screen styles */
 
 @media screen and (min-width: 650px) {
+
+    /* W03 Home Page - Larger Screens */
+
+    .home-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .spotlight-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-content {
+        padding: 3rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2.8rem;
+    }
+
+    /* Header */
 
     .header-content {
         display: flex;
@@ -24,6 +45,8 @@
         padding: 0.6rem 0.8rem;
     }
 
+    /* Directory */
+
     .directory-controls {
         flex-direction: row;
         justify-content: space-between;
@@ -34,12 +57,25 @@
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Footer */
+
     .footer-content {
         grid-template-columns: 1fr 1fr;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 
 @media screen and (min-width: 950px) {
+
+    /* W03 Home Page */
+
+    .spotlight-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* Directory */
 
     .members-grid {
         grid-template-columns: repeat(3, 1fr);

@@ -268,3 +268,170 @@ button:focus-visible {
     outline: 3px solid #f4c542;
     outline-offset: 3px;
 }
+
+/* W03 Home Page */
+
+.home-hero {
+    position: relative;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 280px;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 1.5rem;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        rgb(0 0 0 / 65%),
+        rgb(0 0 0 / 10%)
+    );
+}
+
+.hero-content h1 {
+    max-width: 650px;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #11736d;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.cta-button:hover {
+    background-color: #0b514d;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+.home-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
+}
+
+.home-card h2,
+.spotlights-section h2 {
+    background-color: #12304a;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 5px;
+}
+
+.event-item {
+    padding: 1rem 0;
+}
+
+.event-item h3 {
+    color: #12304a;
+}
+
+.weather-current {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#temperature {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+#weather-description {
+    text-transform: capitalize;
+}
+
+.forecast-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.forecast-card {
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+.forecast-card img {
+    max-width: 100%;
+}
+
+.spotlights-section {
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.spotlight-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.spotlight-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+    background: white;
+}
+
+.spotlight-card img {
+    width: 140px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.spotlight-info h3 {
+    color: #12304a;
+}
+
+.membership-level {
+    font-weight: bold;
+    color: #11736d;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+}
