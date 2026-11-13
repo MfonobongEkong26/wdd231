@@ -105,16 +105,34 @@ async function loadWeather() {
         temperature.textContent =
             `${Math.round(currentData.main.temp)}°C`;
 
-        // Current weather description
-        description.textContent =
-            currentData.weather[0].description;
-
+       
         // Current weather icon
-        weatherIcon.src =
-            `https://openweathermap.org/img/wn/${currentData.weather[0].icon}@2x.png`;
+const weatherCode = currentData.weather[0].icon;
 
-        weatherIcon.alt =
-            currentData.weather[0].description;
+const weatherIcons = {
+    "01d": "☀️",
+    "01n": "🌙",
+    "02d": "🌤️",
+    "02n": "☁️",
+    "03d": "☁️",
+    "03n": "☁️",
+    "04d": "☁️",
+    "04n": "☁️",
+    "09d": "🌧️",
+    "09n": "🌧️",
+    "10d": "🌦️",
+    "10n": "🌧️",
+    "11d": "⛈️",
+    "11n": "⛈️",
+    "13d": "❄️",
+    "13n": "❄️",
+    "50d": "🌫️",
+    "50n": "🌫️"
+};
+
+weatherIcon.textContent = weatherIcons[weatherCode] || "🌤️";
+weatherIcon.setAttribute("aria-label", currentData.weather[0].description);
+
 
         // Three-day forecast
         displayForecast(forecastData.list);
