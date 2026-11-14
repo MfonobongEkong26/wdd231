@@ -293,12 +293,8 @@ button:focus-visible {
     justify-content: center;
     align-items: flex-start;
     padding: 1.5rem;
-    color: white;
-    background: linear-gradient(
-        90deg,
-        rgb(0 0 0 / 65%),
-        rgb(0 0 0 / 10%)
-    );
+    color: #ffffff;
+    background: rgb(18 48 74 / 90%);
 }
 
 .hero-content h1 {
