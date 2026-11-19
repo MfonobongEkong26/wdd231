@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Apply for membership with the Port Harcourt Chamber of Commerce and explore our membership benefits.">
+    <meta name="author" content="Mfonobong">
+
+    <meta property="og:title" content="Join the Port Harcourt Chamber of Commerce">
+    <meta property="og:description" content="Become a member of the Port Harcourt Chamber of Commerce and grow your business connections.">
+    <meta property="og:image" content="https://mfonobongekong26.github.io/wdd231/chamber/images/chamber-hero.jpg">
+    <meta property="og:url" content="https://mfonobongekong26.github.io/wdd231/chamber/join.html">
+    <meta property="og:type" content="website">
+
+    <title>Join | Port Harcourt Chamber of Commerce</title>
+
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <script src="scripts/join.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="brand">
+                <img src="images/favicon.svg" alt="" width="50" height="50">
+                <div>
+                    <p class="site-name">Port Harcourt</p>
+                    <p class="site-subtitle">Chamber of Commerce</p>
+                </div>
+            </div>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav id="primary-nav" aria-label="Main navigation">
+                <a href="index.html">Home</a>
+                <a href="discover.html">Discover</a>
+                <a href="directory.html">Directory</a>
+                <a href="join.html" aria-current="page">Join</a>
+                <a href="join.html">Get Involved</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="join-main">
+        <h1>Join the Chamber of Commerce</h1>
+        <p class="join-intro">
+            Become part of a growing business community in Port Harcourt.
+            Complete the membership application form below to get started.
+        </p>
+
+        <div class="join-layout">
+            <section class="form-section">
+                <h2>Membership Application</h2>
+
+                <form method="get" action="thankyou.html" id="membership-form">
+
+                    <label for="first-name">
+                        First Name
+                        <input
+                            type="text"
+                            id="first-name"
+                            name="firstName"
+                            title="Enter your first name"
+                            autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label for="last-name">
+                        Last Name
+                        <input
+                            type="text"
+                            id="last-name"
+                            name="lastName"
+                            title="Enter your last name"
+                            autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label for="organization-title">
+                        Organizational Title
+                        <input
+                            type="text"
+                            id="organization-title"
+                            name="organizationTitle"
+                            title="Enter your organizational title using at least seven letters, spaces, or hyphens"
+                            autocomplete="organization-title"
+                            pattern="[A-Za-z -]{7,}"
+                            required>
+                    </label>
+
+                    <label for="email">
+                        Email Address
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            title="Enter a valid email address"
+                            autocomplete="email"
+                            placeholder="example@email.com"
+                            required>
+                    </label>
+
+                    <label for="phone">
+                        Mobile Phone Number
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            title="Enter your mobile phone number"
+                            autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label for="organization">
+                        Business/Organization Name
+                        <input
+                            type="text"
+                            id="organization"
+                            name="organization"
+                            title="Enter your business or organization name"
+                            autocomplete="organization"
+                            required>
+                    </label>
+
+                    <label for="membership-level">
+                        Membership Level
+                        <select id="membership-level" name="membershipLevel" required>
+                            <option value="" disabled selected>Select a membership level</option>
+                            <option value="np">NP Membership - Free</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
+                    </label>
+
+                    <label for="description">
+                        Business/Organization Description
+                        <textarea
+                            id="description"
+                            name="description"
+                            title="Describe your business or organization"
+                            rows="5"></textarea>
+                    </label>
+
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <input type="submit" value="Submit Membership Application">
+                </form>
+            </section>
+
+            <section class="membership-section">
+                <h2>Membership Levels</h2>
+
+                <div class="membership-cards">
+                    <article class="membership-card">
+                        <h3>NP Membership</h3>
+                        <p>For nonprofit organizations</p>
+                        <p class="membership-price">Free</p>
+                        <a href="#np-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Bronze Membership</h3>
+                        <p>Build your business connections</p>
+                        <p class="membership-price">Affordable annual fee</p>
+                        <a href="#bronze-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Silver Membership</h3>
+                        <p>Grow your business visibility</p>
+                        <p class="membership-price">Premium annual fee</p>
+                        <a href="#silver-modal" class="modal-link">View Benefits</a>
+                    </article>
+
+                    <article class="membership-card">
+                        <h3>Gold Membership</h3>
+                        <p>Enjoy exclusive business benefits</p>
+                        <p class="membership-price">Elite annual fee</p>
+                        <a href="#gold-modal" class="modal-link">View Benefits</a>
+                    </article>
+                </div>
+            </section>
+        </div>
+
+        <!-- Membership dialogs -->
+        <dialog id="np-modal">
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>No membership fee for nonprofit organizations.</li>
+                <li>Access to selected chamber events.</li>
+                <li>Networking opportunities.</li>
+                <li>Community announcements.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="bronze-modal">
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>Access to chamber networking events.</li>
+                <li>Business directory listing.</li>
+                <li>Discounts on selected training sessions.</li>
+                <li>Business development resources.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="silver-modal">
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>All Bronze membership benefits.</li>
+                <li>Advertising opportunities.</li>
+                <li>Discounts on selected chamber events.</li>
+                <li>Priority access to business training.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+
+        <dialog id="gold-modal">
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>All Silver membership benefits.</li>
+                <li>Featured business spotlight opportunities.</li>
+                <li>Premium advertising opportunities.</li>
+                <li>Exclusive invitations to special events.</li>
+                <li>Priority business promotion.</li>
+            </ul>
+            <button class="close-modal">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Port Harcourt Chamber of Commerce</h2>
+                <p>Port Harcourt, Rivers State, Nigeria</p>
+                <p>Email: info@portharcourtchamber.org</p>
+            </div>
+            <p>&copy; <span id="current-year"></span> Port Harcourt Chamber of Commerce</p>
+            <p>WDD 231 | Mfonobong</p>
+        </div>
+    </footer>
+</body>
+</html>

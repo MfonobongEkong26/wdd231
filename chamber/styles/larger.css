@@ -89,3 +89,24 @@
         padding: 3rem 1rem;
     }
 }
+
+
+/* =================================
+   JOIN PAGE - LARGE SCREENS
+================================= */
+
+@media screen and (min-width: 768px) {
+    .join-layout {
+        grid-template-columns: 1.2fr 0.8fr;
+        align-items: start;
+        gap: 2rem;
+    }
+
+    .membership-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .membership-card {
+        padding: 1.2rem;
+    }
+}
