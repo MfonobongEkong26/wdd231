@@ -4,7 +4,7 @@
 ================================= */
 
 :root {
-    --primary-color: #12304a;
+   --primary-color: #12304a;
     --secondary-color: #168c85;
     --light-color: #f4f6f8;
     --dark-color: #222222;
@@ -102,11 +102,16 @@ main {
     padding: 1rem;
 }
 
+.page-heading,
+.member-card,
+.home-card,
+.spotlight-card {
+    background-color: var(--white-color);
+    border-radius: 8px;
+}
 .page-heading {
     text-align: center;
     padding: 2rem 1rem;
-    background-color: var(--white-color);
-    border-radius: 8px;
     margin-bottom: 1.5rem;
 }
 
@@ -173,11 +178,8 @@ main {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
-
 .member-card {
-    background-color: var(--white-color);
     border: 1px solid #d5dce2;
-    border-radius: 8px;
     padding: 1rem;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
@@ -350,11 +352,8 @@ button:focus-visible {
     gap: 1.5rem;
     padding: 1rem;
 }
-
 .home-card {
-    background: var(--white-color);
     border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 2px 6px rgb(0 0 0 / 8%);
 }
@@ -418,17 +417,14 @@ button:focus-visible {
     grid-template-columns: 1fr;
     gap: 1rem;
 }
-
 .spotlight-card {
     border: 1px solid #ddd;
-    border-radius: 8px;
     padding: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 1rem;
-    background: var(--white-color);
 }
 
 .spotlight-card img {
