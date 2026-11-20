@@ -1,4 +1,7 @@
-/* Main styles - Mobile first */
+
+/* =================================
+   MAIN STYLES - MOBILE FIRST
+================================= */
 
 :root {
     --primary-color: #12304a;
@@ -15,7 +18,9 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+/* =================================
+   HEADER
+================================= */
 
 header {
     background-color: var(--primary-color);
@@ -48,7 +53,9 @@ header {
     font-size: 0.9rem;
 }
 
-/* Navigation */
+/* =================================
+   NAVIGATION
+================================= */
 
 #menu-button {
     display: block;
@@ -85,7 +92,9 @@ nav a.active {
     background-color: #11736d;
 }
 
-/* Main content */
+/* =================================
+   MAIN CONTENT
+================================= */
 
 main {
     max-width: 1100px;
@@ -112,7 +121,9 @@ main {
     margin: 0 auto;
 }
 
-/* Directory controls */
+/* =================================
+   DIRECTORY CONTROLS
+================================= */
 
 .directory-section {
     margin-bottom: 2rem;
@@ -153,7 +164,9 @@ main {
     font-weight: 700;
 }
 
-/* Member cards */
+/* =================================
+   MEMBER CARDS
+================================= */
 
 .members-grid {
     display: grid;
@@ -206,7 +219,9 @@ main {
     margin: 0.5rem 0;
 }
 
-/* List view */
+/* =================================
+   LIST VIEW
+================================= */
 
 .members-list {
     display: flex;
@@ -232,7 +247,9 @@ main {
     min-width: 0;
 }
 
-/* Footer */
+/* =================================
+   FOOTER
+================================= */
 
 footer {
     background-color: var(--primary-color);
@@ -261,7 +278,9 @@ footer {
     font-size: 0.9rem;
 }
 
-/* Focus accessibility */
+/* =================================
+   FOCUS ACCESSIBILITY
+================================= */
 
 a:focus-visible,
 button:focus-visible {
@@ -269,7 +288,9 @@ button:focus-visible {
     outline-offset: 3px;
 }
 
-/* W03 Home Page */
+/* =================================
+   W03 HOME PAGE
+================================= */
 
 .home-hero {
     position: relative;
@@ -293,7 +314,7 @@ button:focus-visible {
     justify-content: center;
     align-items: flex-start;
     padding: 1.5rem;
-    color: #ffffff;
+    color: var(--white-color);
     background: rgb(18 48 74 / 90%);
 }
 
@@ -311,7 +332,7 @@ button:focus-visible {
 .cta-button {
     display: inline-block;
     background-color: #11736d;
-    color: white;
+    color: var(--white-color);
     padding: 0.8rem 1.5rem;
     border-radius: 6px;
     text-decoration: none;
@@ -331,7 +352,7 @@ button:focus-visible {
 }
 
 .home-card {
-    background: white;
+    background: var(--white-color);
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 1rem;
@@ -340,8 +361,8 @@ button:focus-visible {
 
 .home-card h2,
 .spotlights-section h2 {
-    background-color: #12304a;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--white-color);
     padding: 0.8rem;
     border-radius: 5px;
 }
@@ -351,7 +372,7 @@ button:focus-visible {
 }
 
 .event-item h3 {
-    color: #12304a;
+    color: var(--primary-color);
 }
 
 .weather-current {
@@ -407,7 +428,7 @@ button:focus-visible {
     align-items: center;
     text-align: center;
     gap: 1rem;
-    background: white;
+    background: var(--white-color);
 }
 
 .spotlight-card img {
@@ -417,7 +438,7 @@ button:focus-visible {
 }
 
 .spotlight-info h3 {
-    color: #12304a;
+    color: var(--primary-color);
 }
 
 .membership-level {
@@ -468,7 +489,7 @@ button:focus-visible {
 
 .form-section,
 .membership-section {
-    background-color: #ffffff;
+    background-color: var(--white-color);
     padding: 1.5rem;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -501,13 +522,13 @@ button:focus-visible {
     border: 1px solid #777;
     border-radius: 5px;
     font: inherit;
-    background-color: #ffffff;
+    background-color: var(--white-color);
 }
 
 #membership-form input:focus,
 #membership-form select:focus,
 #membership-form textarea:focus {
-    outline: 3px solid #168c85;
+    outline: 3px solid var(--secondary-color);
     outline-offset: 2px;
 }
 
@@ -516,14 +537,14 @@ button:focus-visible {
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--white-color);
     font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
 }
 
 #membership-form input[type="submit"]:hover {
-    background-color: #168c85;
+    background-color: var(--secondary-color);
 }
 
 .membership-cards {
@@ -567,13 +588,15 @@ button:focus-visible {
     padding: 0.6rem 1rem;
     border-radius: 5px;
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--white-color);
     text-decoration: none;
 }
 
 .modal-link:hover {
-    background-color: #168c85;
+    background-color: var(--secondary-color);
 }
+
+/* Membership card animation */
 
 @keyframes cardEntrance {
     from {
@@ -588,6 +611,7 @@ button:focus-visible {
 }
 
 /* Membership dialogs */
+
 dialog {
     width: min(90%, 450px);
     border: none;
@@ -614,14 +638,16 @@ dialog li {
     border: none;
     border-radius: 5px;
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--white-color);
     cursor: pointer;
     font: inherit;
 }
 
 .close-modal:hover {
-    background-color: #168c85;
+    background-color: var(--secondary-color);
 }
+
+/* Respect reduced-motion preferences */
 
 @media (prefers-reduced-motion: reduce) {
     .membership-card {
