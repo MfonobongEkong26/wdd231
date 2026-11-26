@@ -1,0 +1,156 @@
+
+:root {
+    --navy: #1F2937;
+    --orange: #F59E0B;
+    --white: #FFFFFF;
+    --light-gray: #F3F4F6;
+    --dark-text: #222222;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: var(--dark-text);
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 2rem 1rem;
+    border-bottom: 6px solid var(--orange);
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Roboto Slab", serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    background-color: var(--light-gray);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-left: 5px solid var(--orange);
+    border-radius: 6px;
+}
+
+h2 {
+    color: var(--navy);
+    border-bottom: 2px solid var(--orange);
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--navy);
+}
+
+li {
+    margin-bottom: 0.6rem;
+}
+
+.color-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.color-swatch {
+    width: 75px;
+    height: 60px;
+    border: 1px solid #777777;
+    border-radius: 5px;
+    flex-shrink: 0;
+}
+
+.navy {
+    background-color: #1F2937;
+}
+
+.orange {
+    background-color: #F59E0B;
+}
+
+.white {
+    background-color: #FFFFFF;
+}
+
+.font-example {
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: var(--white);
+    border-radius: 5px;
+}
+
+.heading-example {
+    font-family: "Roboto Slab", serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--navy);
+}
+
+.body-example {
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+}
+
+footer {
+    background-color: var(--navy);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    border-top: 5px solid var(--orange);
+}
+
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .color-item {
+        align-items: flex-start;
+    }
+
+    .color-swatch {
+        width: 55px;
+        height: 50px;
+    }
+}
+
+/* Wireframe images */
+section img {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 1rem auto 2rem;
+    border: 2px solid var(--navy);
+    border-radius: 5px;
+    background-color: var(--white);
+}
