@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Discover Port Harcourt | Port Harcourt Chamber of Commerce</title>
+
+<meta name="description"
+    content="Explore attractions, landmarks, parks, museums, and cultural places in Port Harcourt, Rivers State, Nigeria.">
+
+<meta name="author" content="Mfonobong">
+
+<meta property="og:title"
+    content="Discover Port Harcourt - Port Harcourt Chamber of Commerce">
+<meta property="og:description"
+    content="Explore attractions, landmarks, parks, and cultural places in Port Harcourt, Nigeria.">
+<meta property="og:image"
+    content="https://mfonobongekong26.github.io/wdd231/chamber/images/chamber-og.svg">
+<meta property="og:url"
+    content="https://mfonobongekong26.github.io/wdd231/chamber/discover.html">
+<meta property="og:type" content="website">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/discover.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="brand">
+    <img src="images/favicon.svg" alt="" width="50" height="50">
+    <div>
+        <p class="brand-name">Port Harcourt</p>
+        <p>Chamber of Commerce</p>
+    </div>
+</div>
+
+            <button id="menu-button" aria-label="Open navigation menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <nav>
+    <a href="index.html">Home</a>
+    <a href="discover.html" class="active" aria-current="page">Discover</a>
+    <a href="directory.html">Directory</a>
+    <a href="join.html">Join</a>
+</nav>
+    </header>
+
+    
+<main class="discover-main">
+    <section class="page-heading">
+        <h1>Discover Port Harcourt</h1>
+        <p>
+            Explore the attractions, landmarks, culture, and places
+            that make Port Harcourt a special place to live, work,
+            and visit.
+        </p>
+    </section>
+
+    <p id="visit-message" class="visit-message" aria-live="polite">
+        Welcome! Let us know if you have any questions.
+    </p>
+
+    <section class="discover-section" aria-label="Places of interest">
+        <div id="discover-cards" class="discover-grid">
+            <p>Loading places of interest...</p>
+        </div>
+    </section>
+</main>
+
+
+    <footer>
+        <div class="footer-content">
+            <div>
+                <h2>Port Harcourt Chamber of Commerce</h2>
+                <p>Port Harcourt, Rivers State, Nigeria</p>
+                <p>Email: info@example.com</p>
+                <p>Phone: +234 800 000 0000</p>
+            </div>
+
+            <div>
+                <h2>About Our Directory</h2>
+                <p>
+                    Supporting local businesses and encouraging
+                    economic growth in Port Harcourt.
+                </p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>
+                &copy; <span id="currentyear"></span>
+                Port Harcourt Chamber of Commerce |
+                Mfonobong | WDD 231
+            </p>
+
+            <p>
+                Last Modified:
+                <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+
+<script type="module" src="scripts/discover.js"></script>
+</body>
+</html>
